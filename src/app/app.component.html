@@ -1,0 +1,15 @@
+<form [formGroup]="dataForm" (ngSubmit)="onSubmit()">
+  <textarea
+    class="text-area"
+    formControlName="jsonData"
+    cols="60"
+    rows="10"
+  ></textarea>
+  <button type="submit" id="submit">SUBMIT</button>
+</form>
+
+<highcharts-chart
+  [Highcharts]="Highcharts"
+  [options]="chartOptions"
+  style="width: 100%; height: 400px; display: block"
+></highcharts-chart>
